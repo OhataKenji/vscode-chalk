@@ -9,17 +9,32 @@
     "categories": [
         "Programming Languages"
     ],
+    "scripts": {
+        "build": "npx js-yaml syntaxes/chalk.tmLanguage.yaml > syntaxes/chalk.tmLanguage.json"
+    },
     "contributes": {
-        "languages": [{
-            "id": "chalk",
-            "aliases": ["chalk", "chalk"],
-            "extensions": [".ck"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "chalk",
-            "scopeName": "source.chalk",
-            "path": "./syntaxes/chalk.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "chalk",
+                "aliases": [
+                    "chalk",
+                    "chalk"
+                ],
+                "extensions": [
+                    ".ck"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "chalk",
+                "scopeName": "source.chalk",
+                "path": "./syntaxes/chalk.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "js-yaml": "^3.14.0"
     }
 }

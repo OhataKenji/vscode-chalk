@@ -1,0 +1,24 @@
+---
+  $schema: "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json"
+  name: "chalk"
+  patterns: 
+    - 
+      include: "#keywords"
+    - 
+      include: "#strings"
+  repository: 
+    keywords: 
+      patterns: 
+        - 
+          name: "keyword.control.chalk"
+          match: "\\b(if|while|for|return)\\b"
+    strings: 
+      name: "string.quoted.double.chalk"
+      begin: "\""
+      end: "\""
+      patterns: 
+        - 
+          name: "constant.character.escape.chalk"
+          match: "\\\\."
+  scopeName: "source.chalk"
+

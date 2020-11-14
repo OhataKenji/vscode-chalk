@@ -1,0 +1,25 @@
+{
+    "name": "chalk-lang",
+    "displayName": "Chalk Lang",
+    "description": "A domain specific language for writing stories",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "chalk",
+            "aliases": ["chalk", "chalk"],
+            "extensions": [".ck"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "chalk",
+            "scopeName": "source.chalk",
+            "path": "./syntaxes/chalk.tmLanguage.json"
+        }]
+    }
+}
